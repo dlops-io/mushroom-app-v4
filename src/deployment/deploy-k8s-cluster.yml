@@ -283,7 +283,7 @@
             nginx.org/rewrites: "serviceName=frontend rewrite=/;serviceName=api rewrite=/"
         spec:
           rules:
-          - host: "{{ nginx_ingress_ip }}.sslip.io" # Host requires a domain and not just an IP
+          - host:  "mushroom-app.dlops.io"  # "{{ nginx_ingress_ip }}.sslip.io" # Host requires a domain and not just an IP
             http:
               paths:
               - path: /

@@ -105,7 +105,14 @@ Run this step if you do not have a Kubernetes cluster running.
 ansible-playbook deploy-k8s-cluster.yml -i inventory.yml --extra-vars cluster_state=present
 ```
 
-#### View the App
+#### View the App (If you have a domain)
+* Copy the `nginx_ingress_ip` from the terminal from the create cluster command
+* Go to your domain provider and in the DNS settings create a mapping from domain name to the `nginx_ingress_ip`
+* Example: mushroom-app.dlops.io -> 34.148.61.120
+* Go to `mushroom-app.dlops.io`
+
+
+#### View the App (If you do not have a domain)
 * Copy the `nginx_ingress_ip` from the terminal from the create cluster command
 * Go to `http://<YOUR INGRESS IP>.sslip.io`
 
