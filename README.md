@@ -109,7 +109,7 @@ ansible-playbook deploy-k8s-cluster.yml -i inventory.yml --extra-vars cluster_st
 * Copy the `nginx_ingress_ip` from the terminal from the create cluster command
 * Go to your domain provider and in the DNS settings create a mapping from domain name to the `nginx_ingress_ip`
 * Example: mushroom-app.dlops.io -> 34.148.61.120
-* Go to `mushroom-app.dlops.io`
+* App url: http://mushroom-app.dlops.io
 
 
 #### View the App (If you do not have a domain)
