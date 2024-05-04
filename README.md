@@ -81,7 +81,7 @@ The following files will need to be modified to replace the GCP project `ac215-p
 
 * inventory.yml
 * inventory-prod.yml
-* docker-shell.sh or docker-shell.bat
+* docker-shell.sh or docker-shell.bat 
 
 ## Ensure Kubernetes Cluster is Up
 
